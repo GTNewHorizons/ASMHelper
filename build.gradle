@@ -19,6 +19,9 @@ apply plugin: 'java'
 
 group = "squeek.asmhelper"
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 dependencies.add("testCompile", "junit:junit:4.11")
 test.testLogging { events "skipped", "failed", "passed" }
 sourceSets.test.java.srcDirs += 'tests'
@@ -124,7 +127,7 @@ else
 {
 	apply plugin: 'forge'
 	minecraft {
-		version = "1.7.10-10.13.2.1291"
+		version = "1.7.10-10.13.4.1614-1.7.10"
 	}
 
 	sourceSets.main.java.srcDirs += 'raw'
